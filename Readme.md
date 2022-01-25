@@ -232,7 +232,7 @@ int bsearch_2(int l, int r)
 
 通过检查x是否满足某种性质，来确定边界点
 
-![Untitled](%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%20f035fec2a6c84f15a283b33dcd424c9f/Untitled.png)
+![Untitled](png/Untitled.png)
 
 解法：
 
