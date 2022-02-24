@@ -51,13 +51,13 @@ void quick_sort(int q[], int l, int r)
     }
     
     func quickSort(arr []int, l, r int) {
-    if l >= r {
+        if l >= r {
     		return
     	} //确定边界
     	// 减1，加1是为了从让指针先移动再做比较
     	i := l - 1  //左指针
     	j := r + 1  //右指针
-    	x := arr[l] //随便去一个值
+    	x := arr[(l+r)>>1] //随便去一个值
     	for i < j {
     		for {
     			i++ //左指针向右移动后在做比较
@@ -78,7 +78,7 @@ void quick_sort(int q[], int l, int r)
     	quickSort(arr, l, j)
     	quickSort(arr, j+1, r)
     }
-    ```
+```
     
 
 ### 归并排序
