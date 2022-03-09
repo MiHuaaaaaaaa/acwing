@@ -68,7 +68,7 @@ func sub(a, b []int) (c []int) {
 			t = 0
 		}
 	}
-	for len(c) > 1 && c[len(c)-1] == 0 {
+	for len(c) > 1 && c[len(c)-1] == 0 { //去掉前导0
 		c = c[:len(c)-1]
 	}
 	return
