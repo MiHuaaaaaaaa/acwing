@@ -1,9 +1,7 @@
-package main
-
-import "fmt"
+package sort
 
 // 选择排序
-func selectionSort(nums []int) {
+func SelectionSort(nums []int) {
 	if len(nums) <= 1 {
 		return
 	}
@@ -18,10 +16,4 @@ func selectionSort(nums []int) {
 			nums[i], nums[min] = nums[min], nums[i]
 		}
 	}
-}
-
-func main() {
-	nums := []int{4, 5, 6, 7, 8, 3, 2, 1}
-	selectionSort(nums)
-	fmt.Println(nums)
 }
